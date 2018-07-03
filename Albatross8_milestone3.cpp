@@ -15,26 +15,6 @@ int gameboard[8][8] = { // 8 x 8 array that stores states of each LED
   {4,0,0,0,0,0,0,4},
   {4,0,0,0,0,0,0,4},
   {4,4,4,4,4,4,4,4}};
-
-int v1[8][8] = { // Displays if blue has won
-  {4,4,4,4,4,4,4,4},
-  {4,1,1,1,1,1,1,4},
-  {4,1,1,1,1,1,1,4},
-  {4,1,1,1,1,1,1,4},
-  {4,1,1,1,1,1,1,4},
-  {4,1,1,1,1,0,1,4},
-  {4,1,1,1,1,1,1,4},
-  {4,4,4,4,4,4,4,4}};
-
-int v2[8][8] = { // Displays if red has won
-  {4,4,4,4,4,4,4,4},
-  {4,2,2,2,2,2,2,4},
-  {4,2,2,2,2,2,2,4},
-  {4,2,2,2,2,2,2,4},
-  {4,2,2,2,2,2,2,4},
-  {4,2,2,2,2,2,2,4},
-  {4,2,2,2,2,2,2,4},
-  {4,4,4,4,4,4,4,4}};
   
 struct destination {
   int r; 
@@ -258,7 +238,6 @@ void setup() {
  }
  
 void loop() {
-  
   int serialData = Serial.read();
 
   if (valid_moves(1,gameboard).size() != 0 || valid_moves(2,gameboard).size() != 0){
@@ -291,5 +270,6 @@ void loop() {
             theta[0] = (possible.at(serialData-48) - (possible.at(serialData-48) % 10)) / 10;
             theta[1] = possible.at(serialData-48) % 10;
             make_move(1,theta);
-            turn = 2;}}}
-  }}
+            turn = 2;}}}}}
+
+            
