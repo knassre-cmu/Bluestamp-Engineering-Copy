@@ -1,3 +1,10 @@
+/*
+Uses an 8x8 RGB LED matrix and the arduino library Colorduino to display the gameboard. 
+Has all basic functionality for playing a game of 6x6 Othello including a player interface.
+Player 1 is a human making moves via the serial monitor.
+Player 2 is a computer making pseudo random moves.
+*/
+
 #include <Colorduino.h>
 #include <ArduinoSTL.h>
 #include <algorithm>
