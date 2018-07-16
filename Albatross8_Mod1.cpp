@@ -1,4 +1,11 @@
-//#include <Colorduino.h>
+/*
+Uses the serial monitor to display the gameboard.
+Has all basic functionality for playing a game of 6x6 Othello including a player interface.
+Has all basic functionality for displaying the score and declaring a victor on an LCD display with an I2C.
+Player 1 is a human making moves via the serial monitor.
+Player 2 is a computer making pseudo random moves.
+*/
+
 #include <ArduinoSTL.h>
 #include <algorithm>
 #include <vector>
