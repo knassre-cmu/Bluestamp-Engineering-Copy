@@ -4,4 +4,4 @@ Code to play a game of 6 x 6 Othello where player 1 (blue) is a human and player
 
 The most recent version of the code (Mod 3) is set to have player 1 be a human player who interacts with the serial monitor to make moves and player 2 be a computer algorithm making intelligent moves. This version also includes code to control an LCD display.
 
-To be used on an Arduino with an 8x8 Adafruit Neopixel Matrix, along with the Arduino STL library, including algorithm and vector, and the library <Adafruit_NeoPixel.h> to control the matrix, along with an LCD display controlled with an I2C and the libraries <wire> and <liquidcrystal_I2C>.
+To be used on an Arduino with an 8x8 Adafruit Neopixel Matrix, along with the Arduino STL library, including Algorithm and Vector, and the library Adafruit_NeoPixel.h to control the matrix, along with an LCD display controlled with an I2C and the libraries Wire and liquidcrystal_I2C.
