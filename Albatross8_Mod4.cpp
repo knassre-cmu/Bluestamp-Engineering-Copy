@@ -357,11 +357,7 @@ int arct_sort(int player, std::vector<int> moves, int board[8][8]){
   return trin.at(0);}
 
 int minimax(int player, int board[8][8], int depth){ // Advanced intelligent moves algorithm
-  std::vector<int> hypothetical = valid_moves(player,board);
-  std::vector<int> possible;
-  int hyposize = hypothetical.size();
-  for (int H = 0; H < std::min(hyposize, depth + 6); H++){ // Cutoff prevents excessive calculations
-    possible.push_back(hypothetical.at(H));}
+  std::vector<int> possible = valid_moves(player,board);
   int next[8][8];
   std::vector<int> betalist;
   if (depth == 1 or possible.size() == 0){ // How good is this path for the enemy
